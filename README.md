@@ -40,4 +40,4 @@ By the end of this lesson, learners will be able to:
 |||**2 HR 00 MIN**|
 |40 mins|Learners self attempt on assignments|
 |20 mins|Instructors walk through at least 1 question of the assignmentsd|
-|||**END CLASS 2 HR 30 MIN**|
+|||**END CLASS 3 HR 00 MIN**|
