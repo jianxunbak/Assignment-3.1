@@ -19,7 +19,7 @@
 - B: False
 ---
 
-### Q4: Which command is used to compile java files?
+### Q4: Which command is used to compile Java files?
 - A: java
 - B: java_compile
 - C: compile
