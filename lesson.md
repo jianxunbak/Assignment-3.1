@@ -15,7 +15,7 @@ class MainClass{
 Mentions:
 - The keyword `class` is used to define a class.
 - The main method is the entry point of all Java projects.
-- System.out.println will output it's value to the console.
+- System.out.println will output its value to the console.
 
 ---
 
