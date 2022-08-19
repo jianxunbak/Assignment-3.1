@@ -26,11 +26,11 @@
 - D: javac
 ---
 
-### Q5: Which command is used to compile java files?
-- A: java
-- B: java_compile
-- C: compile
-- D: javac
+### Q5: Which of the following is NOT a data type in Java?
+- A: int
+- B: char
+- C: float
+- D: None of the above
 ---
 
 ### Q6: Which is the correct way to instantiate a character in Java?
