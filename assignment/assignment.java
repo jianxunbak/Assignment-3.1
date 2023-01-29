@@ -1,4 +1,4 @@
-class assignment {
+class Assignment {
     
     public static void main(String args[]){
 
