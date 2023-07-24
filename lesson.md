@@ -28,6 +28,9 @@ Install SDKMan:
 
 ```bash
 $ curl -s "https://get.sdkman.io" | bash
+
+# Note: For WSL users, you may need to install zip and unzip first.
+$ sudo apt install zip unzip
 ```
 
 Check if sdkman is installed:
@@ -120,7 +123,7 @@ $ javac main.java
 $ java Main "Hello World"
 ```
 
----
+You may also run the code directly from VSCode using the "Run Java" button.
 
 ## Part 4 - Variables & Data Types
 
@@ -140,7 +143,7 @@ public class DataTypesDemo {
 }
 ```
 
-Try removing `int num2 = Integer.parseInt(args[0]);` and see what happens?
+🤔 Try replacing `Integer.parseInt(args[0])` with just `args[0]`. What happens and why?
 
 In Java, variables must belong to a data type.
 
@@ -422,6 +425,12 @@ Summary from [Source](https://medium.com/android-news/magic-lies-here-statically
 - A language is **dynamically-typed** if the type of a variable is checked during run-time.
 - A **strongly-typed** language is one in which variables are bound to specific data types, and will result in type errors if types do not match up as expected in the expression — regardless of when type checking occurs.
 - A **weakly-typed (loosely-typed)** language on the other hand is a language in which variables are not bound to a specific data type; they still have a type, but type safety constraints are lower compared to strongly-typed languages.
+
+---
+
+## Tip: Code Formatting
+
+To configure Java code formatting in VS Code, when in a Java file, right click and select "Format Document With" and choose "Language Support for Java by Red Hat".
 
 ---
 
