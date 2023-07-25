@@ -156,7 +156,7 @@ There are 8 primitive data types in Java:
 |     int      |             |
 |     long     |             |
 
-You cannot perform `11 + "1"`. This expression adds a string value of `1` to integer value of `11`, which would not work. Therefore, we had to perform `Integer.parseInt()` to parse a String to an Integer.
+You cannot perform `11 + "1"`. This expression adds a `String` value of `1` to `int` value of `11`, which would not work. Therefore, we had to perform `Integer.parseInt()` to parse a `String` to an `Integer`.
 
 ### Casting
 
@@ -180,7 +180,7 @@ double b = 1.5;
 double result = a + b;
 ```
 
-This is possible because the converted value (int) fits within the range of the new data type (double).
+This is possible because the converted value (`int`) fits within the range of the new data type (`double`).
 
 In Java, there are two types of casting:
 
@@ -203,7 +203,7 @@ System.out.println(myDouble);   // Outputs 9.78
 System.out.println(myInt);      // Outputs 9
 ```
 
-#### Casting from String to int
+#### Casting from `String` to `Integer`
 
 The earlier way of casting, using `Integer.parseInt()`, is for converting a String to an integer. It uses the `parseInt()` method from the `Integer` class.
 
@@ -224,7 +224,7 @@ double doubleNum = 1.5D;
 
 Why do we need to specify the type of the numeric literal?
 
-- Without the suffix, the compiler will generally treat a whole number as an int, and a decimal number as a double.
+- Without the suffix, the compiler will generally treat a whole number as an `int`, and a decimal number as a `double`.
 
 ```java
 // Compiler treats 1.5 as a double
@@ -240,11 +240,11 @@ double d = 1.5; // No error
 
 Try initializing the following five data types and print them
 
-- String
-- char
-- int
-- float
-- boolean
+- `String`
+- `char`
+- `int`
+- `float`
+- `boolean`
 
 Your code should look something like this:
 
@@ -313,20 +313,20 @@ Recall Java has 8 primitive data types. For each of those types, there is a corr
 
 Wrapper classes provide a way to use primitive data types as objects, as well as provide some simple operations, which cannot be stored on a primitive.
 
-For example, as you saw earlier, the `Integer` class provide a useful method to convert a String to an Integer.
+For example, as you saw earlier, the `Integer` class provide a useful method to convert a `String` to an `Integer`.
 
 ```java
 int num = Integer.parseInt("10");
 ```
 
-You can also check the maximum and minimum values of an Integer.
+You can also check the maximum and minimum values of an `Integer`.
 
 ```java
 System.out.println(Integer.MAX_VALUE);
 System.out.println(Integer.MIN_VALUE);
 ```
 
-We can declare an Integer object like this instead using the primitive data type:
+We can declare an `Integer` object like this instead using the primitive data type:
 
 ```java
 Integer num = 10;
@@ -371,7 +371,7 @@ public class UserInputDemo {
 
 ### 👨‍💻 Activity: Get 2 numbers from user and add them
 
-Create a new file `AddTwoNumbers.java` and write a program that gets 2 numbers from the user and add them together.
+Create a new file `AddTwoNumbers.java` and write a program that reads 2 numbers from the console and add them together.
 
 ## Part 7 (Optional) - Compiled vs Interpreted Language
 
@@ -428,9 +428,16 @@ Summary from [Source](https://medium.com/android-news/magic-lies-here-statically
 
 ---
 
-## Tip: Code Formatting
+## Useful Tips
+
+### Code Formatting
 
 To configure Java code formatting in VS Code, when in a Java file, right click and select "Format Document With" and choose "Language Support for Java by Red Hat".
+
+### Shortcuts
+
+- Type "so" and press tab to generate `System.out.println()`
+- Type "psvm" and press tab to generate `public static void main(String[] args)`
 
 ---
 
