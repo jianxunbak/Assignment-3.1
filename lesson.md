@@ -136,7 +136,7 @@ public class DataTypesDemo {
 
     static int num1 = 10;
     public static void main(String args[]){
-        // A String needs to be cast into Integer
+        // The String needs to be converted into an Integer
         int num2 = Integer.parseInt(args[0]);
         System.out.println(num1 + num2);
     }
@@ -203,9 +203,9 @@ System.out.println(myDouble);   // Outputs 9.78
 System.out.println(myInt);      // Outputs 9
 ```
 
-#### Casting from `String` to `Integer`
+#### Converting from `String` to `Integer`
 
-The earlier way of casting, using `Integer.parseInt()`, is for converting a String to an integer. It uses the `parseInt()` method from the `Integer` class.
+The earlier way of using `Integer.parseInt()` is for converting a `String` to an `Integer`. It uses the `parseInt()` method from the `Integer` class. This is not the same as casting, which uses the `()` operator.
 
 ### Numeric Literal Character Suffixes
 
