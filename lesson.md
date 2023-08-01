@@ -1,7 +1,12 @@
 # Part 1: Installation of JDK and Extension
 
-Note: Windows users need to install WSL2 to follow this lesson.
-https://learn.microsoft.com/en-us/windows/wsl/install
+Note: 
+1. Windows users need to install WSL2 to follow this lesson.
+- https://learn.microsoft.com/en-us/windows/wsl/install
+
+2. Git setup for WSL
+- https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
+
 
 ## Terminology
 
