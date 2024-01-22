@@ -124,7 +124,7 @@ To compile the file, we use the `javac` command on the java file. This generates
 Then, we use the `java` command to run the `.class` file. String values can be passed into the `main` method as arguments.
 
 ```sh
-$ javac main.java
+$ javac Main.java
 $ java Main "Hello World"
 ```
 
@@ -282,7 +282,7 @@ public class DataTypesDemo {
 With these commands:
 
 ```sh
-$ javac types.java
+$ javac DataTypesDemo.java
 $ java DataTypesDemo 1
 ```
 
