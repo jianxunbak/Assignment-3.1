@@ -1,12 +1,14 @@
 # Part 1: Installation of JDK and Extension
 
-Note: 
+Note:
+
 1. Windows users need to install WSL2 to follow this lesson.
+
 - https://learn.microsoft.com/en-us/windows/wsl/install
 
 2. Git setup for WSL
-- https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
 
+- https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
 
 ## Terminology
 
@@ -32,10 +34,16 @@ Benefits:
 Install SDKMan:
 
 ```bash
-$ curl -s "https://get.sdkman.io" | bash
-
-# Note: For WSL users, you may need to install zip and unzip first.
+# Note: For WSL users, you will need to install zip and unzip first.
 $ sudo apt install zip unzip
+
+$ curl -s "https://get.sdkman.io" | bash
+```
+
+After installation, you will need to run this line to initialize SDKMan:
+
+```bash
+$ source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
 Check if sdkman is installed:
@@ -52,10 +60,12 @@ List the available Java SDKs:
 $ sdk list java
 ```
 
-We will install Eclipse Temurin JDK17 because it is the latest LTS version.
+We will install Eclipse Temurin JDK17 because it is an LTS version with extended support till September 2029. LTS stands for Long Term Support, which means it will be supported for a longer period.
+
+> Java SE Support Roadmap: https://www.oracle.com/java/technologies/java-se-support-roadmap.html
 
 ```bash
-$ sdk install java 17.0.8-tem
+$ sdk install java 17.0.11-tem
 ```
 
 Check if Java is installed:
@@ -132,15 +142,14 @@ You may also run the code directly from VSCode using the "Run Java" button.
 
 ## Part 4 - Variables & Data Types
 
-### Step 1: Create `DataTypesDemo.java`
+### Step 1: Create `LearnDataTypes.java`
 
 ### Step 2: Insert the following code
 
 ```java
-public class DataTypesDemo {
-
-    static int num1 = 10;
+public class LearnDataTypes {
     public static void main(String args[]){
+        int num1 = 10;
         // The String needs to be converted into an Integer
         int num2 = Integer.parseInt(args[0]);
         System.out.println(num1 + num2);
@@ -154,12 +163,12 @@ In Java, variables must belong to a data type.
 
 There are 8 primitive data types in Java:
 
-| Whole Number | Real Number | Single Char | Boolean |
-| :----------: | :---------: | :---------: | :-----: |
-|     byte     |    float    |    char     | boolean |
-|    short     |   double    |
-|     int      |             |
-|     long     |             |
+| Whole Number | Decimal | Single Char | Boolean |
+| :----------: | :-----: | :---------: | :-----: |
+|     byte     |  float  |    char     | boolean |
+|    short     | double  |
+|     int      |         |
+|     long     |         |
 
 You cannot perform `11 + "1"`. This expression adds a `String` value of `1` to `int` value of `11`, which would not work. Therefore, we had to perform `Integer.parseInt()` to parse a `String` to an `Integer`.
 
@@ -254,9 +263,9 @@ Try initializing the following five data types and print them
 Your code should look something like this:
 
 ```java
-public class DataTypesDemo {
-  static int num1 = 10;
+public class LearnDataTypes {
   public static void main(String args[]){
+    int num1 = 10;
     // A String needs to be cast into Integer
     int num2 = Integer.parseInt(args[0]);
     System.out.println(num1 + num2);
@@ -282,8 +291,8 @@ public class DataTypesDemo {
 With these commands:
 
 ```sh
-$ javac DataTypesDemo.java
-$ java DataTypesDemo 1
+$ javac LearnDataTypes.java
+$ java LearnDataTypes 1
 ```
 
 This output will be generated:
