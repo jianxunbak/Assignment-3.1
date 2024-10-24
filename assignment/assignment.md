@@ -7,8 +7,6 @@ These questions revolves around the issue of data types and how to convert from 
 Write your answer below:
 
 ```
-// Your answer
-```
-
 Parsing: converting a string to another data type, such as interger, float, double.
 Casting: converting a data type to another compatible data type within the same hierarchy, such as integer to float
+```
